@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/logo.png" alt="BrandReviewAI" width="120" />
+  <img src="../assets/logo.png" alt="BrandReviewAI" width="120" />
 </p>
 
 <h1 align="center">BrandReviewAI</h1>
@@ -15,7 +15,7 @@
 BrandReviewAI helps brand teams review creative assets against their brand guidelines automatically. Upload a marketing asset, and four independent AI analyzers grade it across the dimensions that matter most to brand consistency — turning a manual review checklist into a structured, repeatable report.
 
 <p align="center">
-  <img src="./assets/hero.png" alt="BrandReviewAI dashboard" width="100%" />
+  <img src="../assets/hero.png" alt="BrandReviewAI dashboard" width="100%" />
 </p>
 
 ## The four analyzers
@@ -26,7 +26,7 @@ BrandReviewAI helps brand teams review creative assets against their brand guide
 - **🏷️ Logo Detection** — hybrid pipeline: YOLOv8-nano on the fast path (~50ms), with a Qwen2.5-VL fallback for ambiguous cases.
 
 <p align="center">
-  <img src="./assets/analyzers.png" alt="Analyzer results view" width="100%" />
+  <img src="../assets/analyzers.png" alt="Analyzer results view" width="100%" />
 </p>
 
 ## Architecture
@@ -43,7 +43,7 @@ BrandReviewAI helps brand teams review creative assets against their brand guide
 A user uploads an asset in the React frontend. `br-be` stores the file in S3 and writes its metadata to MongoDB, then calls the Python `context-fusion-engine`, which runs the four analyzers in parallel and returns a structured compliance report.
 
 <p align="center">
-  <img src="./assets/report.png" alt="Compliance report" width="100%" />
+  <img src="../assets/report.png" alt="Compliance report" width="100%" />
 </p>
 
 ## Repository layout
